@@ -16,8 +16,8 @@ public class HostSsh extends Host {
 
 		// Set basic parameters
 		resources.setCpus(1);
-		health.setAlive(true);
 		health = new HostHealth(this);
+		health.setAlive(true);
 	}
 
 	public HostHealth getHealth() {
